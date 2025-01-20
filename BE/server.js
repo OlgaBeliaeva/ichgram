@@ -4,7 +4,7 @@ import http from 'http';
 import { Server } from 'socket.io';
 
 import connectDB from './config/db.js';
-import { messageSocketHandler, authenticateSocket } from './routes/messageRoutes.js';
+import { messageSocketHandler, authenticateSocket } from './src/routes/messageRoutes.js';
 import { notificationnSocketHandler } from "./middlewares/notificationSocketHandler.js";
 import app from './app.js';
 
