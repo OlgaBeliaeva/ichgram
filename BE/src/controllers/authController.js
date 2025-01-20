@@ -1,7 +1,7 @@
 // Регистрация пользователя
 import bcrypt from 'bcrypt';
-import User from '../models/userModel';
-import generateTocken from '../config/jwt';
+import User from '../models/userModel.js';
+import generateTocken from '../config/jwt.js';
   
 
 export const register = async (req,res) => {
