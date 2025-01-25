@@ -17,3 +17,4 @@ router.delete('/:commentId', authMiddleware, deleteComment);
 router.post('/like/:commentId', authMiddleware, likeComment);
 
 export default router;
+

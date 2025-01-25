@@ -1,18 +1,18 @@
 import express from 'express';
-import { register, login, checkUser, updatePassword } from '../controllers/authController';
+import { register, login, checkUser, updatePassword } from '../controllers/authController.js';
 
 const router = express.Router();
 
-// ркгистрация нового пользователя
+// Регистрация нового пользователя
 router.post('/register', register);
 
-// вход пользователя
+// Вход пользователя
 router.post('/login', login);
 
 
-router.post('/check-user', checkUser);
+router.post('/check-user', checkUser)
 
-// обновление пароля
-router.post('/update-password', updatePassword);
+
+router.post('/update-password', updatePassword)
 
 export default router;
